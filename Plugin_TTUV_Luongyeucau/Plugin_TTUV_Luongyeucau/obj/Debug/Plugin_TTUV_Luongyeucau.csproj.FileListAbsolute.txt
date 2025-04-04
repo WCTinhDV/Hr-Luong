@@ -1,0 +1,11 @@
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Plugin_TTUV_Luongyeucau.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Plugin_TTUV_Luongyeucau.pdb
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Newtonsoft.Json.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\bin\Debug\Newtonsoft.Json.xml
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\obj\Debug\Plugin_TTUV_Luongyeucau.csprojResolveAssemblyReference.cache
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\obj\Debug\Plugin_TTUV_Luongyeucau.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_TTUV_Luongyeucau\Plugin_TTUV_Luongyeucau\obj\Debug\Plugin_TTUV_Luongyeucau.pdb
