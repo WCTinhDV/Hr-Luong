@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 using System.Linq;
 using System.Collections.Generic;
 using System.Globalization;
-
+using Microsoft.Xrm.Sdk.Query;
 
 namespace Plugin_TTUV_Luongyeucau
 {
@@ -30,12 +30,28 @@ namespace Plugin_TTUV_Luongyeucau
                     traceService.Trace("Plugin đã được kích hoạt lại (Depth > 1), bỏ qua việc thực thi.");
                     return;
                 }
+                if (context.Stage == 20 && context.MessageName == "Retrieve")
+                {
+                    if (context.InputParameters.Contains("ColumnSet"))
+                    {
+                        object rawColumnSet = context.InputParameters["ColumnSet"];
+                        ColumnSet columnSet = rawColumnSet as ColumnSet;
+
+                        if (columnSet != null)
+                        {
+                            columnSet.AddColumns("crdfd_mahoamucluongyeucau", "crdfd_idvmucluongyeucau");
+                            traceService.Trace("Đã thêm các trường mã hóa vào ColumnSet trong Pre-operation.");
+                        }
+                    }
+
+                    return; // Skip further processing in PreOp
+                }
 
                 if (context.MessageName == "Update" || context.MessageName == "Create")
                 {
                     ProcessUpdateOrCreate(context, service);
                 }
-                else if (context.MessageName == "Retrieve")
+                else if (context.MessageName == "Retrieve" && context.Stage == 40)
                 {
                     ProcessRetrieve(context, service);
                 }
@@ -130,6 +146,7 @@ namespace Plugin_TTUV_Luongyeucau
             if (context.OutputParameters.Contains("BusinessEntity") && context.OutputParameters["BusinessEntity"] is Entity)
             {
                 var entity = (Entity)context.OutputParameters["BusinessEntity"];
+                traceService.Trace($"Entity: {entity}");
                 string currentUserEmail = GetCurrentUserEmail(service, context.UserId);
                 var allowedEmails = new[] { "tinh.do@wecare-i.com", "xuan.pham@wecare.com.vn", "anh.le@wecare.com.vn", "khoi.tran@wecare.com.vn", "van.duong@wecare.com.vn" };
 
@@ -141,7 +158,7 @@ namespace Plugin_TTUV_Luongyeucau
                 string apiUrl = "https://20.55.41.213:443/de_luong_ns_batch";
                 var fieldsToDecrypt = new[]
                 {
-            new { EncryptedField = "crdfd_mahoamucluongyeucau", IvField = "crdfd_idvmucluongyeucau", ResultField = "crdfd_mucluongyeucau" },
+            new { EncryptedField = "crdfd_mahoamucluongyeucau", IvField = "crdfd_idvmucluongyeucau", ResultField = "crdfd_mucluongyeucau" }
         };
 
                 // Tạo danh sách batch cho API giải mã
@@ -159,6 +176,10 @@ namespace Plugin_TTUV_Luongyeucau
                         ResultField = field.ResultField
                     })
                     .ToList();
+                traceService.Trace($"Giá trị mã hóa: {entity.GetAttributeValue<string>("crdfd_mahoamucluongyeucau")}");
+                traceService.Trace($"Giá trị IV: {entity.GetAttributeValue<string>("crdfd_idvmucluongyeucau")}");
+                traceService.Trace($"Entity chứa crdfd_mahoamucluongyeucau?: {entity.Contains("crdfd_mahoamucluongyeucau")}");
+                traceService.Trace($"Entity chứa crdfd_idvmucluongyeucau?: {entity.Contains("crdfd_idvmucluongyeucau")}");
 
                 if (!batchData.Any())
                 {
