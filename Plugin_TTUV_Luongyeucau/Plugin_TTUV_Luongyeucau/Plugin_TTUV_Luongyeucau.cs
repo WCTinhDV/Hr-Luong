@@ -148,7 +148,7 @@ namespace Plugin_TTUV_Luongyeucau
                 var entity = (Entity)context.OutputParameters["BusinessEntity"];
                 traceService.Trace($"Entity: {entity}");
                 string currentUserEmail = GetCurrentUserEmail(service, context.UserId);
-                var allowedEmails = new[] { "tinh.do@wecare-i.com", "xuan.pham@wecare.com.vn", "anh.le@wecare.com.vn", "khoi.tran@wecare.com.vn", "van.duong@wecare.com.vn" };
+                var allowedEmails = new[] { "tinh.do@wecare-i.com", "xuan.pham@wecare.com.vn", "anh.le@wecare.com.vn", "khoi.tran@wecare.com.vn", "van.duong@wecare.com.vn", "tuan.doan@wecare.com.vn" };
 
                 if (!Array.Exists(allowedEmails, email => email.Equals(currentUserEmail, StringComparison.OrdinalIgnoreCase)))
                 {
@@ -240,7 +240,7 @@ namespace Plugin_TTUV_Luongyeucau
             traceService.Trace("Xử lý hành động RetrieveMultiple.");
             var entityCollection = (EntityCollection)context.OutputParameters["BusinessEntityCollection"];
             string currentUserEmail = GetCurrentUserEmail(service, context.UserId);
-            var allowedEmails = new[] { "tinh.do@wecare-i.com", "xuan.pham@wecare.com.vn", "anh.le@wecare.com.vn", "khoi.tran@wecare.com.vn", "van.duong@wecare.com.vn" };
+            var allowedEmails = new[] { "tinh.do@wecare-i.com", "xuan.pham@wecare.com.vn", "anh.le@wecare.com.vn", "khoi.tran@wecare.com.vn", "van.duong@wecare.com.vn", "tuan.doan@wecare.com.vn" };
 
             if (!Array.Exists(allowedEmails, email => email.Equals(currentUserEmail, StringComparison.OrdinalIgnoreCase)))
             {
