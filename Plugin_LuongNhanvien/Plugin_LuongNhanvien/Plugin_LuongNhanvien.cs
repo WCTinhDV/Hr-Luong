@@ -63,7 +63,7 @@ namespace Plugin_LuongNhanvien
                     return;
                 }
 
-                string apiUrl = "https://20.55.41.213:443/en_luong_ns_batch";
+                string apiUrl = "https://20.55.82.61:443/en_luong_ns_batch";
                 var fieldsToEncrypt = new[]
                 {
              new { Field = "cr44a_tongthunhap", EncryptedField = "cr44a_tongthunhapmahoa", IvField = "cr44a_idvtongthunhap" },
@@ -139,7 +139,7 @@ namespace Plugin_LuongNhanvien
                     traceService.Trace("User không có quyền giải mã.");
                     return;
                 }
-                string apiUrl = "https://20.55.41.213:443/de_luong_ns_batch";
+                string apiUrl = "https://20.55.82.61:443/de_luong_ns_batch";
                 var fieldsToDecrypt = new[]
                 {
             new { EncryptedField = "cr44a_tongthunhapmahoa", IvField = "cr44a_idvtongthunhap", ResultField = "cr44a_tongthunhap" },
@@ -231,7 +231,7 @@ namespace Plugin_LuongNhanvien
 
             if (context.OutputParameters.Contains("BusinessEntityCollection") && context.OutputParameters["BusinessEntityCollection"] is EntityCollection)
             {
-                string apiUrl = "https://20.55.41.213:443/de_luong_ns_batch"; // API hỗ trợ batch
+                string apiUrl = "https://20.55.82.61:443/de_luong_ns_batch"; // API hỗ trợ batch
                 var fieldsToDecrypt = new[]
                 {
             new { EncryptedField = "cr44a_tongthunhapmahoa", IvField = "cr44a_idvtongthunhap", ResultField = "cr44a_tongthunhap" },

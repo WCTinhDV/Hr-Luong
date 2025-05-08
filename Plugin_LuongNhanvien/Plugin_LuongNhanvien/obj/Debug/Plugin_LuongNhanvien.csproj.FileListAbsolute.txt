@@ -9,3 +9,14 @@ D:\Wecare\C#\Nhân sự\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Newt
 D:\Wecare\C#\Nhân sự\Plugin_LuongNhanvien\Plugin_LuongNhanvien\obj\Debug\Plugin_LuongNhanvien.csprojResolveAssemblyReference.cache
 D:\Wecare\C#\Nhân sự\Plugin_LuongNhanvien\Plugin_LuongNhanvien\obj\Debug\Plugin_LuongNhanvien.dll
 D:\Wecare\C#\Nhân sự\Plugin_LuongNhanvien\Plugin_LuongNhanvien\obj\Debug\Plugin_LuongNhanvien.pdb
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Plugin_LuongNhanvien.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Plugin_LuongNhanvien.pdb
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Newtonsoft.Json.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\bin\Debug\Newtonsoft.Json.xml
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\obj\Debug\Plugin_LuongNhanvien.csprojResolveAssemblyReference.cache
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\obj\Debug\Plugin_LuongNhanvien.dll
+D:\Wecare\C#\Nhân sự\Hr-Luong\Plugin_LuongNhanvien\Plugin_LuongNhanvien\obj\Debug\Plugin_LuongNhanvien.pdb
